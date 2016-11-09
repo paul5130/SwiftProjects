@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleWatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WUS-c4-hk0">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcO-Dr-Ird">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="46" id="si9-wN-wt9"/>
+                                        </constraints>
+                                        <state key="normal" title="Reset">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="timerReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MHo-Tk-Bl3"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDO-1w-Elf">
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="HcO-Dr-Ird" secondAttribute="trailing" constant="8" id="4CI-40-5mI"/>
+                                    <constraint firstItem="CDO-1w-Elf" firstAttribute="leading" secondItem="WUS-c4-hk0" secondAttribute="leading" id="4nR-fV-CVP"/>
+                                    <constraint firstItem="HcO-Dr-Ird" firstAttribute="leading" secondItem="WUS-c4-hk0" secondAttribute="leading" constant="321" id="5hz-xR-OD0"/>
+                                    <constraint firstAttribute="bottom" secondItem="CDO-1w-Elf" secondAttribute="bottom" constant="50" id="HlG-JX-i77"/>
+                                    <constraint firstAttribute="trailing" secondItem="CDO-1w-Elf" secondAttribute="trailing" id="OED-LH-Wli"/>
+                                    <constraint firstItem="HcO-Dr-Ird" firstAttribute="top" secondItem="WUS-c4-hk0" secondAttribute="top" id="byR-FO-WSI"/>
+                                    <constraint firstItem="CDO-1w-Elf" firstAttribute="centerY" secondItem="WUS-c4-hk0" secondAttribute="centerY" id="eGm-hA-qfn"/>
+                                    <constraint firstItem="CDO-1w-Elf" firstAttribute="top" secondItem="HcO-Dr-Ird" secondAttribute="bottom" constant="19" id="wEW-fh-bgh"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebr-hr-u43">
+                                <color key="backgroundColor" red="0.33491177459758326" green="1" blue="0.41042600025214315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="wVo-J2-bhD"/>
+                                </constraints>
+                                <state key="normal" image="pause"/>
+                                <connections>
+                                    <action selector="timerPause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NrL-eV-HsT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3v-2v-XsK">
+                                <color key="backgroundColor" red="0.27177479418867445" green="0.31747748940473863" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="play"/>
+                                <connections>
+                                    <action selector="timerStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="27p-aY-hq7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ebr-hr-u43" firstAttribute="leading" secondItem="d3v-2v-XsK" secondAttribute="trailing" constant="8" symbolic="YES" id="1G3-CX-Oiu"/>
+                            <constraint firstItem="Ebr-hr-u43" firstAttribute="width" secondItem="d3v-2v-XsK" secondAttribute="width" constant="-27" id="1Ru-SJ-ztE"/>
+                            <constraint firstItem="WUS-c4-hk0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="54I-XJ-sUW"/>
+                            <constraint firstItem="WUS-c4-hk0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="BeC-x6-KnR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WUS-c4-hk0" secondAttribute="bottom" constant="444" id="Bva-4C-8Ya"/>
+                            <constraint firstItem="Ebr-hr-u43" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="PoK-o4-GX5"/>
+                            <constraint firstItem="Ebr-hr-u43" firstAttribute="top" secondItem="d3v-2v-XsK" secondAttribute="top" id="UMC-cH-mOz"/>
+                            <constraint firstItem="Ebr-hr-u43" firstAttribute="top" secondItem="WUS-c4-hk0" secondAttribute="bottom" constant="8" symbolic="YES" id="lBE-0z-fWC"/>
+                            <constraint firstItem="Ebr-hr-u43" firstAttribute="trailing" secondItem="WUS-c4-hk0" secondAttribute="trailing" id="lV2-Kr-45u"/>
+                            <constraint firstItem="Ebr-hr-u43" firstAttribute="bottom" secondItem="d3v-2v-XsK" secondAttribute="bottom" id="s5A-PZ-WJe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnPause" destination="Ebr-hr-u43" id="igm-mG-idF"/>
+                        <outlet property="btnReset" destination="HcO-Dr-Ird" id="IwS-xt-0N7"/>
+                        <outlet property="btnStart" destination="d3v-2v-XsK" id="RLl-c0-nsb"/>
+                        <outlet property="lblCount" destination="CDO-1w-Elf" id="4cj-Wg-Noz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pause" width="42" height="56"/>
+        <image name="play" width="48" height="61"/>
+    </resources>
+</document>

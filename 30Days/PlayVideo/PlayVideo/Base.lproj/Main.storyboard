@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PlayVideo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ht6-34-rKt">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="videoCell" rowHeight="220" id="EIC-HE-tkW" customClass="VideoCell" customModule="PlayVideo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="220"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EIC-HE-tkW" id="gmA-d3-eDX">
+                                            <frame key="frameInset" width="343" height="219"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videoScreenshot01" translatesAutoresizingMaskIntoConstraints="NO" id="G3D-6i-bPJ"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Re-a9-mHr">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="Dhg-hH-37b"/>
+                                                        <constraint firstAttribute="height" constant="60" id="bYZ-nB-OtB"/>
+                                                    </constraints>
+                                                    <state key="normal" image="playBtn"/>
+                                                    <connections>
+                                                        <action selector="PlayVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I34-7z-TPW"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXP-YJ-cmz">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Source" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOG-mX-8b1">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fOG-mX-8b1" firstAttribute="top" secondItem="NXP-YJ-cmz" secondAttribute="bottom" constant="8" id="7yH-rG-qUV"/>
+                                                <constraint firstItem="NXP-YJ-cmz" firstAttribute="top" secondItem="8Re-a9-mHr" secondAttribute="bottom" constant="8" id="C0H-wZ-xOJ"/>
+                                                <constraint firstItem="G3D-6i-bPJ" firstAttribute="centerX" secondItem="gmA-d3-eDX" secondAttribute="centerX" id="Et7-GQ-AG1"/>
+                                                <constraint firstItem="fOG-mX-8b1" firstAttribute="leading" secondItem="gmA-d3-eDX" secondAttribute="leadingMargin" id="INw-xj-d70"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="NXP-YJ-cmz" secondAttribute="trailing" id="KMu-LU-v98"/>
+                                                <constraint firstItem="G3D-6i-bPJ" firstAttribute="centerY" secondItem="gmA-d3-eDX" secondAttribute="centerY" id="YM2-H0-o0M"/>
+                                                <constraint firstItem="8Re-a9-mHr" firstAttribute="centerX" secondItem="G3D-6i-bPJ" secondAttribute="centerX" id="Yqh-iF-Hwd"/>
+                                                <constraint firstItem="NXP-YJ-cmz" firstAttribute="leading" secondItem="gmA-d3-eDX" secondAttribute="leadingMargin" id="cdc-Qz-Hfi"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="G3D-6i-bPJ" secondAttribute="trailing" id="eWa-90-dUv"/>
+                                                <constraint firstItem="8Re-a9-mHr" firstAttribute="centerY" secondItem="G3D-6i-bPJ" secondAttribute="centerY" id="soh-wg-zdT"/>
+                                                <constraint firstItem="G3D-6i-bPJ" firstAttribute="top" secondItem="gmA-d3-eDX" secondAttribute="topMargin" id="uz7-MS-AjY"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="fOG-mX-8b1" secondAttribute="trailing" id="z6V-vG-Doi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="btnVideo" destination="8Re-a9-mHr" id="Gk8-1S-CcJ"/>
+                                            <outlet property="lblSource" destination="fOG-mX-8b1" id="p58-8s-qhv"/>
+                                            <outlet property="lblTitle" destination="NXP-YJ-cmz" id="FId-be-rwa"/>
+                                            <outlet property="videoScreenShot" destination="G3D-6i-bPJ" id="WFn-PS-QBn"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="9MP-Me-9TZ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="k3n-jD-sLW"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ht6-34-rKt" secondAttribute="bottom" id="2hv-iZ-Nc0"/>
+                            <constraint firstItem="ht6-34-rKt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="8QW-Sa-FLM"/>
+                            <constraint firstItem="ht6-34-rKt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="CTA-eS-Nlm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ht6-34-rKt" secondAttribute="trailing" id="FeD-Mu-H3q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="ht6-34-rKt" id="o6z-6e-Lk7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="playBtn" width="60" height="60"/>
+        <image name="videoScreenshot01" width="375" height="220"/>
+    </resources>
+</document>

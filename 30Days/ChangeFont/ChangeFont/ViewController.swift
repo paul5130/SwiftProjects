@@ -14,13 +14,13 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     @IBOutlet weak var btnChangeFont: UIButton!
     
-    var data = ["30 Days Swift", "这些字体特别适合打「奋斗」和「理想」", "谢谢「造字工房」，本案例不涉及商业使用", "使用到造字工房劲黑体，致黑体，童心体", "呵呵，再见🤗 See you next Project", "微博 @Allen朝辉",
-                "测试测试测试测试测试测试",
-                "123",
-                "Alex",
+    var data = ["30 Days Swift", "增肌減脂好難好難", "尋找一起跑步一起減脂的夥伴", "我要去嘉明湖！！！", "呵呵，再见🤗", "FB:paul5130@hotmail.com",
+                "line:paul5130",
+                "Android 和 iOS",
+                "Paul",
                 "@@@@@@"]
     
-    var fontNames = ["MFTongXin_Noncommercial-Regular", "MFJinHei_Noncommercial-Regular", "MFZhiHei_Noncommercial-Regular", "edundot", "Gaspar Regular"]
+    var fontNames = ["bansheepilotengrave", "galant", "KlavikaArrows-Bold", "Mechanization", "spartaco"]
     
     var fontRowIndex = 0
     

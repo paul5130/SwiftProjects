@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA0E98C81DBA153E003CFFA6 /* Gaspar Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DA0E98C41DBA153E003CFFA6 /* Gaspar Regular.otf */; };
-		DA0E98C91DBA153E003CFFA6 /* MFJinHei_Noncommercial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA0E98C51DBA153E003CFFA6 /* MFJinHei_Noncommercial-Regular.ttf */; };
-		DA0E98CA1DBA153E003CFFA6 /* MFTongXin_Noncommercial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA0E98C61DBA153E003CFFA6 /* MFTongXin_Noncommercial-Regular.ttf */; };
-		DA0E98CB1DBA153E003CFFA6 /* MFZhiHei_Noncommercial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA0E98C71DBA153E003CFFA6 /* MFZhiHei_Noncommercial-Regular.ttf */; };
+		DA74B0C01DD3080B00A49B47 /* bansheepilotengrave.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA74B0BB1DD3042200A49B47 /* bansheepilotengrave.ttf */; };
+		DA74B0C11DD3080B00A49B47 /* galant.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA74B0BC1DD3042200A49B47 /* galant.ttf */; };
+		DA74B0C21DD3080B00A49B47 /* KlavikaArrows-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DA74B0BD1DD3042200A49B47 /* KlavikaArrows-Bold.otf */; };
+		DA74B0C31DD3080B00A49B47 /* Mechanization.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA74B0BE1DD3042200A49B47 /* Mechanization.ttf */; };
+		DA74B0C41DD3080B00A49B47 /* spartaco.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA74B0BF1DD3042200A49B47 /* spartaco.ttf */; };
 		DA7F0EBB1DB89509001CFD28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F0EBA1DB89509001CFD28 /* AppDelegate.swift */; };
 		DA7F0EBD1DB89509001CFD28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F0EBC1DB89509001CFD28 /* ViewController.swift */; };
 		DA7F0EC01DB89509001CFD28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA7F0EBE1DB89509001CFD28 /* Main.storyboard */; };
@@ -19,10 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DA0E98C41DBA153E003CFFA6 /* Gaspar Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaspar Regular.otf"; sourceTree = "<group>"; };
-		DA0E98C51DBA153E003CFFA6 /* MFJinHei_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFJinHei_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
-		DA0E98C61DBA153E003CFFA6 /* MFTongXin_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFTongXin_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
-		DA0E98C71DBA153E003CFFA6 /* MFZhiHei_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFZhiHei_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
+		DA74B0BB1DD3042200A49B47 /* bansheepilotengrave.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bansheepilotengrave.ttf; sourceTree = "<group>"; };
+		DA74B0BC1DD3042200A49B47 /* galant.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = galant.ttf; sourceTree = "<group>"; };
+		DA74B0BD1DD3042200A49B47 /* KlavikaArrows-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KlavikaArrows-Bold.otf"; sourceTree = "<group>"; };
+		DA74B0BE1DD3042200A49B47 /* Mechanization.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mechanization.ttf; sourceTree = "<group>"; };
+		DA74B0BF1DD3042200A49B47 /* spartaco.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = spartaco.ttf; sourceTree = "<group>"; };
 		DA7F0EB71DB89509001CFD28 /* ChangeFont.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChangeFont.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7F0EBA1DB89509001CFD28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA7F0EBC1DB89509001CFD28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,10 +70,11 @@
 				DA7F0EC11DB89509001CFD28 /* Assets.xcassets */,
 				DA7F0EC31DB89509001CFD28 /* LaunchScreen.storyboard */,
 				DA7F0EC61DB89509001CFD28 /* Info.plist */,
-				DA0E98C41DBA153E003CFFA6 /* Gaspar Regular.otf */,
-				DA0E98C51DBA153E003CFFA6 /* MFJinHei_Noncommercial-Regular.ttf */,
-				DA0E98C61DBA153E003CFFA6 /* MFTongXin_Noncommercial-Regular.ttf */,
-				DA0E98C71DBA153E003CFFA6 /* MFZhiHei_Noncommercial-Regular.ttf */,
+				DA74B0BB1DD3042200A49B47 /* bansheepilotengrave.ttf */,
+				DA74B0BC1DD3042200A49B47 /* galant.ttf */,
+				DA74B0BD1DD3042200A49B47 /* KlavikaArrows-Bold.otf */,
+				DA74B0BE1DD3042200A49B47 /* Mechanization.ttf */,
+				DA74B0BF1DD3042200A49B47 /* spartaco.ttf */,
 			);
 			path = ChangeFont;
 			sourceTree = "<group>";
@@ -136,12 +139,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA74B0C01DD3080B00A49B47 /* bansheepilotengrave.ttf in Resources */,
+				DA74B0C11DD3080B00A49B47 /* galant.ttf in Resources */,
+				DA74B0C21DD3080B00A49B47 /* KlavikaArrows-Bold.otf in Resources */,
+				DA74B0C31DD3080B00A49B47 /* Mechanization.ttf in Resources */,
+				DA74B0C41DD3080B00A49B47 /* spartaco.ttf in Resources */,
 				DA7F0EC51DB89509001CFD28 /* LaunchScreen.storyboard in Resources */,
-				DA0E98C81DBA153E003CFFA6 /* Gaspar Regular.otf in Resources */,
-				DA0E98CB1DBA153E003CFFA6 /* MFZhiHei_Noncommercial-Regular.ttf in Resources */,
-				DA0E98C91DBA153E003CFFA6 /* MFJinHei_Noncommercial-Regular.ttf in Resources */,
 				DA7F0EC21DB89509001CFD28 /* Assets.xcassets in Resources */,
-				DA0E98CA1DBA153E003CFFA6 /* MFTongXin_Noncommercial-Regular.ttf in Resources */,
 				DA7F0EC01DB89509001CFD28 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

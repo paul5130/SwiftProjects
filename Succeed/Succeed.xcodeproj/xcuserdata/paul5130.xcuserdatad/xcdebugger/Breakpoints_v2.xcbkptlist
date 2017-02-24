@@ -38,16 +38,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Succeed/NewPage1ViewController.swift"
-            timestampString = "508325376.068099"
+            filePath = "WalkthroughPageViewController.swift"
+            timestampString = "509250113.41428"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "156"
-            endingLineNumber = "156"
-            landmarkName = "viewDidAppear(_:)"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "contentViewController(at:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

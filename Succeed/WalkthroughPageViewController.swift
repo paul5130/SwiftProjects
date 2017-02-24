@@ -3,7 +3,7 @@ import UIKit
 
 class WalkthroughPageViewController: UIPageViewController,UIPageViewControllerDataSource {
     
-    var pageImages = ["PageView1","PageView2","PageView3","PageView4"]
+    var pageImages = ["PageView1.png","PageView2.png","PageView3.png","PageView4.png"]
     var pageLabels = ["",
                       "Many stuff in your daily life?",
                       "Simply view your work on timeline",
@@ -37,13 +37,32 @@ class WalkthroughPageViewController: UIPageViewController,UIPageViewControllerDa
         if index < 0 || index >= pageImages.count{
             return nil
         }
-        if let pageContentViewController = storyboard?.instantiateViewController(withIdentifier: "WalkthroughContentViewcontroller") as?WalkthroughContentViewController{
-            pageContentViewController.index = index
+        
+//        let pageContentViewController : WalkthroughContentViewController = storyboard?.instantiateViewController(withIdentifier: "WalkthroughContentViewController") as! WalkthroughContentViewController
+
+        if let pageContentViewController = storyboard?.instantiateViewController(withIdentifier: "WalkthroughContentViewController") as?WalkthroughContentViewController{
             pageContentViewController.imageFile = pageImages[index]
             pageContentViewController.label = pageLabels[index]
+            pageContentViewController.index = index
             return pageContentViewController
         }
+        
+        
         return nil
+    }
+//    func presentationCount(for pageViewController: UIPageViewController) -> Int {
+//        return pageLabels.count
+//    }
+//    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
+//        if let pageContentViewController = storyboard?.instantiateViewController(withIdentifier: "WalkthroughContentViewController") as? WalkthroughContentViewController{
+//            return pageContentViewController.index
+//        }
+//        return 0
+//    }
+    func forward(index: Int) {
+        if let nextViewController = contentViewController(at: index + 1) {
+            setViewControllers([nextViewController], direction: .forward, animated: true, completion: nil)
+        }
     }
     /*
     // MARK: - Navigation

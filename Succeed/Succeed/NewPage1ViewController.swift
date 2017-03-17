@@ -1,6 +1,6 @@
 
 import UIKit
-
+import UserNotifications
 class NewPage1ViewController: UIViewController {
     
     
@@ -39,7 +39,7 @@ class NewPage1ViewController: UIViewController {
         datePicker.addTarget(self, action: #selector(NewPage1ViewController.datePickerValueChange(sender:)), for: .valueChanged)
         colorDictionary = ["white": whiteButton,"orange":orangeButton,"pink":pinkButton,"green":greenButton,"lightBlue":lightBlue,"navyBlue":navyBlue,"gray":grayButton]
         colorDictionary["white"]?.backgroundColor = UIColor.gray
-
+        prepareNotification()
     }
     override func viewDidAppear(_ animated: Bool) {
         if UserDefaults.standard.bool(forKey: "hasViewedWalkthrough"){
@@ -65,7 +65,15 @@ class NewPage1ViewController: UIViewController {
             destinationConroller.scheduleDate = dateString
         }
     }
-
+    func prepareNotification(){
+        let content = UNMutableNotificationContent()
+        content.title = "It's time for plan"
+        content.subtitle = "ready to go?"
+        content.sound = UNNotificationSound.default()
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true)
+        let request = UNNotificationRequest(identifier: "Succeed.notification", content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+    }
     @IBAction func buttonPresset(sender: UIButton)
     {
         for colorButton in colorDictionary.values{

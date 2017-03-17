@@ -15,6 +15,12 @@ class HomeVC: BaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func ScanQRCodeTapped(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "QRCode") as! QRCodeViewController
+        self.present(vc, animated: true, completion: nil)
+        
+    }
 
     /*
     // MARK: - Navigation

@@ -12,7 +12,8 @@
 		DA2C06EA1D9A8D2900869CB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2C06E81D9A8D2900869CB6 /* Main.storyboard */; };
 		DA2C06EC1D9A8D2900869CB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2C06EB1D9A8D2900869CB6 /* Assets.xcassets */; };
 		DA2C06EF1D9A8D2900869CB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2C06ED1D9A8D2900869CB6 /* LaunchScreen.storyboard */; };
-		DA69C33B1DA5FB5F0013EE46 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69C33A1DA5FB5F0013EE46 /* CameraVC.swift */; };
+		DA2DAB141E6CFAE80038AA8C /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2DAB131E6CFAE80038AA8C /* QRCodeViewController.swift */; };
+		DA8E62431E66CF22002443AE /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E62421E66CF22002443AE /* CameraVC.swift */; };
 		DA94B04E1DA779E000287E47 /* MyCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA94B04D1DA779E000287E47 /* MyCustomView.swift */; };
 		DA94DBEA1D9B51AC004C69F2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA94DBE91D9B51AC004C69F2 /* MenuViewController.swift */; };
 		DA97D4A51DA491A0002F3D23 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA97D4A41DA491A0002F3D23 /* BaseViewController.swift */; };
@@ -28,7 +29,8 @@
 		DA2C06EB1D9A8D2900869CB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA2C06EE1D9A8D2900869CB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA2C06F01D9A8D2900869CB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA69C33A1DA5FB5F0013EE46 /* CameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraVC.swift; path = ../CameraVC.swift; sourceTree = "<group>"; };
+		DA2DAB131E6CFAE80038AA8C /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		DA8E62421E66CF22002443AE /* CameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		DA94B04D1DA779E000287E47 /* MyCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomView.swift; sourceTree = "<group>"; };
 		DA94DBE91D9B51AC004C69F2 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		DA97D4A41DA491A0002F3D23 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -69,9 +71,10 @@
 				DA2C06E41D9A8D2900869CB6 /* AppDelegate.swift */,
 				DA2C06E61D9A8D2900869CB6 /* ViewController.swift */,
 				DA97D4A61DA4E455002F3D23 /* HomeVC.swift */,
-				DA69C33A1DA5FB5F0013EE46 /* CameraVC.swift */,
 				DA94DBE91D9B51AC004C69F2 /* MenuViewController.swift */,
+				DA8E62421E66CF22002443AE /* CameraVC.swift */,
 				DA97D4A41DA491A0002F3D23 /* BaseViewController.swift */,
+				DA2DAB131E6CFAE80038AA8C /* QRCodeViewController.swift */,
 				DA94B04D1DA779E000287E47 /* MyCustomView.swift */,
 				DA97D4A81DA4E6AE002F3D23 /* PlayVC.swift */,
 				DA2C06EB1D9A8D2900869CB6 /* Assets.xcassets */,
@@ -109,7 +112,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Paul;
 				TargetAttributes = {
 					DA2C06E01D9A8D2800869CB6 = {
@@ -158,9 +161,10 @@
 				DA97D4A71DA4E455002F3D23 /* HomeVC.swift in Sources */,
 				DA94B04E1DA779E000287E47 /* MyCustomView.swift in Sources */,
 				DA2C06E71D9A8D2900869CB6 /* ViewController.swift in Sources */,
-				DA69C33B1DA5FB5F0013EE46 /* CameraVC.swift in Sources */,
+				DA8E62431E66CF22002443AE /* CameraVC.swift in Sources */,
 				DA97D4A51DA491A0002F3D23 /* BaseViewController.swift in Sources */,
 				DA94DBEA1D9B51AC004C69F2 /* MenuViewController.swift in Sources */,
+				DA2DAB141E6CFAE80038AA8C /* QRCodeViewController.swift in Sources */,
 				DA97D4A91DA4E6AE002F3D23 /* PlayVC.swift in Sources */,
 				DA2C06E51D9A8D2900869CB6 /* AppDelegate.swift in Sources */,
 			);
@@ -206,6 +210,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -256,6 +261,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

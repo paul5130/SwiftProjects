@@ -23,7 +23,7 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
             break
         case 1:
             print("Play\n", terminator: "")
-            self.openViewControllerBasedOnIdentifier("PlayVC")
+            self.openViewControllerBasedOnIdentifier("PlayVC2")
             break
         case 2:
             print("Camera\n")

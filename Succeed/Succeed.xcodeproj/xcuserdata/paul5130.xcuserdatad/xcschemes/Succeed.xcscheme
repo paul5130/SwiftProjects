@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DA915BA11E40943D0082D50C"
+               BlueprintIdentifier = "DA86CC951E77D2DC00A23F96"
                BuildableName = "Succeed.app"
                BlueprintName = "Succeed"
                ReferencedContainer = "container:Succeed.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DA915BA11E40943D0082D50C"
+            BlueprintIdentifier = "DA86CC951E77D2DC00A23F96"
             BuildableName = "Succeed.app"
             BlueprintName = "Succeed"
             ReferencedContainer = "container:Succeed.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DA915BA11E40943D0082D50C"
+            BlueprintIdentifier = "DA86CC951E77D2DC00A23F96"
             BuildableName = "Succeed.app"
             BlueprintName = "Succeed"
             ReferencedContainer = "container:Succeed.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DA915BA11E40943D0082D50C"
+            BlueprintIdentifier = "DA86CC951E77D2DC00A23F96"
             BuildableName = "Succeed.app"
             BlueprintName = "Succeed"
             ReferencedContainer = "container:Succeed.xcodeproj">

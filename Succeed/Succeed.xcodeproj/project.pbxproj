@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA86CC9C1E77D2DC00A23F96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86CC9B1E77D2DC00A23F96 /* ViewController.swift */; };
+		DA3A30FE1E7F725300EC6E1E /* DetailProjectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A30FD1E7F725300EC6E1E /* DetailProjectController.swift */; };
+		DA5969E31E7EE3560082DF06 /* AddProjectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5969E21E7EE3560082DF06 /* AddProjectController.swift */; };
+		DA86CC9C1E77D2DC00A23F96 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86CC9B1E77D2DC00A23F96 /* SettingController.swift */; };
 		DA86CCA41E77D2DC00A23F96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA86CCA21E77D2DC00A23F96 /* LaunchScreen.storyboard */; };
 		DA86CCAC1E77D51B00A23F96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA86CCAB1E77D51B00A23F96 /* Main.storyboard */; };
-		DA86CCB51E77D57900A23F96 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86CCAD1E77D57900A23F96 /* TestVC.swift */; };
+		DA86CCB51E77D57900A23F96 /* TimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86CCAD1E77D57900A23F96 /* TimelineController.swift */; };
 		DA86CCB61E77D57900A23F96 /* TimelineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86CCAE1E77D57900A23F96 /* TimelineCell.swift */; };
 		DA86CCB71E77D57900A23F96 /* NewPage1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86CCAF1E77D57900A23F96 /* NewPage1ViewController.swift */; };
 		DA86CCB81E77D57900A23F96 /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86CCB01E77D57900A23F96 /* WalkthroughContentViewController.swift */; };
@@ -26,15 +28,19 @@
 		DAF5B57B1E7BE098003192BA /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5B57A1E7BE098003192BA /* TitleViewController.swift */; };
 		DAF5B57D1E7C37F2003192BA /* FolderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5B57C1E7C37F2003192BA /* FolderController.swift */; };
 		DAF5B57F1E7C44C0003192BA /* FolderImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF5B57E1E7C44C0003192BA /* FolderImageCollectionViewCell.swift */; };
+		DAF82ED71E7CE29500FF56A1 /* ImageViewWithGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF82ED61E7CE29500FF56A1 /* ImageViewWithGradient.swift */; };
+		DAF82ED91E7CE83F00FF56A1 /* TimelineDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF82ED81E7CE83F00FF56A1 /* TimelineDetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA3A30FD1E7F725300EC6E1E /* DetailProjectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailProjectController.swift; sourceTree = "<group>"; };
+		DA5969E21E7EE3560082DF06 /* AddProjectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProjectController.swift; sourceTree = "<group>"; };
 		DA86CC961E77D2DC00A23F96 /* Succeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Succeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA86CC9B1E77D2DC00A23F96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA86CC9B1E77D2DC00A23F96 /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
 		DA86CCA31E77D2DC00A23F96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA86CCA51E77D2DC00A23F96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA86CCAB1E77D51B00A23F96 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		DA86CCAD1E77D57900A23F96 /* TestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
+		DA86CCAD1E77D57900A23F96 /* TimelineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineController.swift; sourceTree = "<group>"; };
 		DA86CCAE1E77D57900A23F96 /* TimelineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineCell.swift; sourceTree = "<group>"; };
 		DA86CCAF1E77D57900A23F96 /* NewPage1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPage1ViewController.swift; sourceTree = "<group>"; };
 		DA86CCB01E77D57900A23F96 /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +56,8 @@
 		DAF5B57A1E7BE098003192BA /* TitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleViewController.swift; sourceTree = "<group>"; };
 		DAF5B57C1E7C37F2003192BA /* FolderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderController.swift; sourceTree = "<group>"; };
 		DAF5B57E1E7C44C0003192BA /* FolderImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		DAF82ED61E7CE29500FF56A1 /* ImageViewWithGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewWithGradient.swift; sourceTree = "<group>"; };
+		DAF82ED81E7CE83F00FF56A1 /* TimelineDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineDetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA3A30FF1E7F7E1600EC6E1E /* NewProject */ = {
+			isa = PBXGroup;
+			children = (
+				DA3A30FD1E7F725300EC6E1E /* DetailProjectController.swift */,
+				DA86CCB21E77D57900A23F96 /* ImageCollectionViewCell.swift */,
+				DA5969E21E7EE3560082DF06 /* AddProjectController.swift */,
+			);
+			name = NewProject;
+			sourceTree = "<group>";
+		};
+		DA4027E51E7FCE4500231067 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				DA86CC9B1E77D2DC00A23F96 /* SettingController.swift */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		DA5969DD1E7E303E0082DF06 /* Notice */ = {
+			isa = PBXGroup;
+			children = (
+				DAF5B5781E7BBC9C003192BA /* NoticeController.swift */,
+				DAF5B5761E7BB950003192BA /* NoticeCell.swift */,
+			);
+			name = Notice;
+			sourceTree = "<group>";
+		};
+		DA5969DE1E7E307F0082DF06 /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				DA86CCAD1E77D57900A23F96 /* TimelineController.swift */,
+				DA86CCAE1E77D57900A23F96 /* TimelineCell.swift */,
+				DAF82ED81E7CE83F00FF56A1 /* TimelineDetailController.swift */,
+			);
+			name = Timeline;
+			sourceTree = "<group>";
+		};
+		DA5969DF1E7E30970082DF06 /* Folder */ = {
+			isa = PBXGroup;
+			children = (
+				DAF5B57C1E7C37F2003192BA /* FolderController.swift */,
+				DAF5B57E1E7C44C0003192BA /* FolderImageCollectionViewCell.swift */,
+			);
+			name = Folder;
+			sourceTree = "<group>";
+		};
+		DA5969E01E7E312D0082DF06 /* Introduce */ = {
+			isa = PBXGroup;
+			children = (
+				DA86CCB01E77D57900A23F96 /* WalkthroughContentViewController.swift */,
+				DA86CCB11E77D57900A23F96 /* WalkthroughPageViewController.swift */,
+			);
+			name = Introduce;
+			sourceTree = "<group>";
+		};
+		DA5969E11E7E314D0082DF06 /* Extenstion */ = {
+			isa = PBXGroup;
+			children = (
+				DAF5B57A1E7BE098003192BA /* TitleViewController.swift */,
+				DA86CCB31E77D57900A23F96 /* LittleCircle.swift */,
+				DAF82ED61E7CE29500FF56A1 /* ImageViewWithGradient.swift */,
+			);
+			name = Extenstion;
+			sourceTree = "<group>";
+		};
 		DA86CC8D1E77D2DC00A23F96 = {
 			isa = PBXGroup;
 			children = (
@@ -82,21 +155,16 @@
 		DA86CC981E77D2DC00A23F96 /* Succeed */ = {
 			isa = PBXGroup;
 			children = (
-				DA86CCBD1E77D5D600A23F96 /* AppDelegate.swift */,
-				DA86CC9B1E77D2DC00A23F96 /* ViewController.swift */,
-				DAF5B57C1E7C37F2003192BA /* FolderController.swift */,
-				DA86CCAD1E77D57900A23F96 /* TestVC.swift */,
-				DA86CCAE1E77D57900A23F96 /* TimelineCell.swift */,
-				DAF5B5781E7BBC9C003192BA /* NoticeController.swift */,
-				DAF5B5761E7BB950003192BA /* NoticeCell.swift */,
-				DAF5B57A1E7BE098003192BA /* TitleViewController.swift */,
-				DA86CCAF1E77D57900A23F96 /* NewPage1ViewController.swift */,
-				DA86CCB01E77D57900A23F96 /* WalkthroughContentViewController.swift */,
-				DA86CCB11E77D57900A23F96 /* WalkthroughPageViewController.swift */,
-				DA86CCB21E77D57900A23F96 /* ImageCollectionViewCell.swift */,
-				DAF5B57E1E7C44C0003192BA /* FolderImageCollectionViewCell.swift */,
-				DA86CCB31E77D57900A23F96 /* LittleCircle.swift */,
+				DA3A30FF1E7F7E1600EC6E1E /* NewProject */,
+				DA5969DF1E7E30970082DF06 /* Folder */,
+				DA5969DE1E7E307F0082DF06 /* Timeline */,
+				DA5969DD1E7E303E0082DF06 /* Notice */,
+				DA5969E11E7E314D0082DF06 /* Extenstion */,
+				DA5969E01E7E312D0082DF06 /* Introduce */,
+				DA4027E51E7FCE4500231067 /* Setting */,
 				DA86CCB41E77D57900A23F96 /* NewPage2ViewController.swift */,
+				DA86CCBD1E77D5D600A23F96 /* AppDelegate.swift */,
+				DA86CCAF1E77D57900A23F96 /* NewPage1ViewController.swift */,
 				DAF5B56C1E7AC2C8003192BA /* Assets.xcassets */,
 				DA86CCAB1E77D51B00A23F96 /* Main.storyboard */,
 				DA86CCBF1E77D97C00A23F96 /* Succeed.xcdatamodeld */,
@@ -180,11 +248,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA86CCB61E77D57900A23F96 /* TimelineCell.swift in Sources */,
-				DA86CC9C1E77D2DC00A23F96 /* ViewController.swift in Sources */,
+				DA86CC9C1E77D2DC00A23F96 /* SettingController.swift in Sources */,
 				DA86CCBA1E77D57900A23F96 /* ImageCollectionViewCell.swift in Sources */,
+				DA5969E31E7EE3560082DF06 /* AddProjectController.swift in Sources */,
 				DAF5B57B1E7BE098003192BA /* TitleViewController.swift in Sources */,
 				DAF5B57F1E7C44C0003192BA /* FolderImageCollectionViewCell.swift in Sources */,
-				DA86CCB51E77D57900A23F96 /* TestVC.swift in Sources */,
+				DAF82ED91E7CE83F00FF56A1 /* TimelineDetailController.swift in Sources */,
+				DA86CCB51E77D57900A23F96 /* TimelineController.swift in Sources */,
 				DAF5B5791E7BBC9C003192BA /* NoticeController.swift in Sources */,
 				DA86CCB81E77D57900A23F96 /* WalkthroughContentViewController.swift in Sources */,
 				DA86CCC11E77D97C00A23F96 /* Succeed.xcdatamodeld in Sources */,
@@ -193,7 +263,9 @@
 				DA86CCB71E77D57900A23F96 /* NewPage1ViewController.swift in Sources */,
 				DAF5B5771E7BB950003192BA /* NoticeCell.swift in Sources */,
 				DA86CCBE1E77D5D600A23F96 /* AppDelegate.swift in Sources */,
+				DAF82ED71E7CE29500FF56A1 /* ImageViewWithGradient.swift in Sources */,
 				DA86CCB91E77D57900A23F96 /* WalkthroughPageViewController.swift in Sources */,
+				DA3A30FE1E7F725300EC6E1E /* DetailProjectController.swift in Sources */,
 				DAF5B57D1E7C37F2003192BA /* FolderController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

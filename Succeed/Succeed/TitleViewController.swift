@@ -12,9 +12,9 @@ class TitleViewController: UIViewController {
         UIGraphicsEndImageContext()
         self.navigationController?.navigationBar.setBackgroundImage(image, for: .default)
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
-//        let leftBarItem = UIBarButtonItem(barButtonSystemItem: .undo, target: self, action: #selector(TitleViewController.barLeftItemPressedn(_:)))
-//        self.navigationItem.leftBarButtonItem = leftBarItem
-        
+        let rightBarItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(TitleViewController.barRightItemPressedn(_:)))
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationItem.rightBarButtonItem = rightBarItem
         
         // Do any additional setup after loading the view.
     }
@@ -23,11 +23,20 @@ class TitleViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    func barLeftItemPressedn(_ sender: AnyObject)
+    func barRightItemPressedn(_ sender: AnyObject)
     {
-        self.dismiss(animated: true, completion: nil);
+//        self.dismiss(animated: true, completion: nil);
+        let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil);
+        let NewProjectVC : AddProjectController = storyboard.instantiateViewController(withIdentifier: "AddProjectController") as! AddProjectController;
+        
+//        self.present(NewProjectVC, animated: true, completion: nil);
+        self.navigationController?.pushViewController(NewProjectVC, animated: true)
     }
-    
+    func dateToString(yourDate: Date,yourFormat: String)-> String{
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = yourFormat
+        return dateFormatter.string(from: yourDate)
+    }
     func customOrange() -> CAGradientLayer{
         let color1 = UIColor(red: 0.95, green: 0.35, blue: 0.14, alpha: 1)
         

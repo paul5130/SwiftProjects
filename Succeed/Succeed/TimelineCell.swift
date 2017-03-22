@@ -14,7 +14,9 @@ class TimelineCell: UITableViewCell {
 
     @IBOutlet weak var timelineTime: UILabel!
     
-    @IBOutlet weak var timelineBackImg: UIImageView!
+    @IBOutlet weak var timelineBackImg: ImageViewWithGradient!
+
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

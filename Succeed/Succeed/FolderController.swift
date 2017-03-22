@@ -7,7 +7,7 @@ class FolderController: TitleViewController,UICollectionViewDelegate,UICollectio
     var images:[UIImage] = [UIImage(named:"picMeeting.png")!,UIImage(named:"picReading.png")!,UIImage(named:"picClimbing.png")!,UIImage(named:"picDating.png")!,UIImage(named:"picUpload.png")!]
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -26,6 +26,7 @@ class FolderController: TitleViewController,UICollectionViewDelegate,UICollectio
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = folderImageCollectionView.dequeueReusableCell(withReuseIdentifier: "folderImageCell", for: indexPath) as! FolderImageCollectionViewCell
         cell.imageCell.image = images[indexPath.row]
+
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

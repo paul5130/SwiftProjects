@@ -14,12 +14,10 @@
 		DA86CCAC1E77D51B00A23F96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA86CCAB1E77D51B00A23F96 /* Main.storyboard */; };
 		DA86CCB51E77D57900A23F96 /* TimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86CCAD1E77D57900A23F96 /* TimelineController.swift */; };
 		DA86CCB61E77D57900A23F96 /* TimelineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86CCAE1E77D57900A23F96 /* TimelineCell.swift */; };
-		DA86CCB71E77D57900A23F96 /* NewPage1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86CCAF1E77D57900A23F96 /* NewPage1ViewController.swift */; };
 		DA86CCB81E77D57900A23F96 /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86CCB01E77D57900A23F96 /* WalkthroughContentViewController.swift */; };
 		DA86CCB91E77D57900A23F96 /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86CCB11E77D57900A23F96 /* WalkthroughPageViewController.swift */; };
 		DA86CCBA1E77D57900A23F96 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86CCB21E77D57900A23F96 /* ImageCollectionViewCell.swift */; };
 		DA86CCBB1E77D57900A23F96 /* LittleCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86CCB31E77D57900A23F96 /* LittleCircle.swift */; };
-		DA86CCBC1E77D57900A23F96 /* NewPage2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86CCB41E77D57900A23F96 /* NewPage2ViewController.swift */; };
 		DA86CCBE1E77D5D600A23F96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA86CCBD1E77D5D600A23F96 /* AppDelegate.swift */; };
 		DA86CCC11E77D97C00A23F96 /* Succeed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA86CCBF1E77D97C00A23F96 /* Succeed.xcdatamodeld */; };
 		DAF5B56D1E7AC2C8003192BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAF5B56C1E7AC2C8003192BA /* Assets.xcassets */; };
@@ -42,12 +40,10 @@
 		DA86CCAB1E77D51B00A23F96 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DA86CCAD1E77D57900A23F96 /* TimelineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineController.swift; sourceTree = "<group>"; };
 		DA86CCAE1E77D57900A23F96 /* TimelineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineCell.swift; sourceTree = "<group>"; };
-		DA86CCAF1E77D57900A23F96 /* NewPage1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPage1ViewController.swift; sourceTree = "<group>"; };
 		DA86CCB01E77D57900A23F96 /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
 		DA86CCB11E77D57900A23F96 /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		DA86CCB21E77D57900A23F96 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		DA86CCB31E77D57900A23F96 /* LittleCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LittleCircle.swift; sourceTree = "<group>"; };
-		DA86CCB41E77D57900A23F96 /* NewPage2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPage2ViewController.swift; sourceTree = "<group>"; };
 		DA86CCBD1E77D5D600A23F96 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA86CCC01E77D97C00A23F96 /* Succeed.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Succeed.xcdatamodel; sourceTree = "<group>"; };
 		DAF5B56C1E7AC2C8003192BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -162,9 +158,7 @@
 				DA5969E11E7E314D0082DF06 /* Extenstion */,
 				DA5969E01E7E312D0082DF06 /* Introduce */,
 				DA4027E51E7FCE4500231067 /* Setting */,
-				DA86CCB41E77D57900A23F96 /* NewPage2ViewController.swift */,
 				DA86CCBD1E77D5D600A23F96 /* AppDelegate.swift */,
-				DA86CCAF1E77D57900A23F96 /* NewPage1ViewController.swift */,
 				DAF5B56C1E7AC2C8003192BA /* Assets.xcassets */,
 				DA86CCAB1E77D51B00A23F96 /* Main.storyboard */,
 				DA86CCBF1E77D97C00A23F96 /* Succeed.xcdatamodeld */,
@@ -258,9 +252,7 @@
 				DAF5B5791E7BBC9C003192BA /* NoticeController.swift in Sources */,
 				DA86CCB81E77D57900A23F96 /* WalkthroughContentViewController.swift in Sources */,
 				DA86CCC11E77D97C00A23F96 /* Succeed.xcdatamodeld in Sources */,
-				DA86CCBC1E77D57900A23F96 /* NewPage2ViewController.swift in Sources */,
 				DA86CCBB1E77D57900A23F96 /* LittleCircle.swift in Sources */,
-				DA86CCB71E77D57900A23F96 /* NewPage1ViewController.swift in Sources */,
 				DAF5B5771E7BB950003192BA /* NoticeCell.swift in Sources */,
 				DA86CCBE1E77D5D600A23F96 /* AppDelegate.swift in Sources */,
 				DAF82ED71E7CE29500FF56A1 /* ImageViewWithGradient.swift in Sources */,

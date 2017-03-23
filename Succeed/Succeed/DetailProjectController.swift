@@ -2,16 +2,16 @@
 import UIKit
 import CoreData
 
-class DetailProjectController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
-    var images:[UIImage] = [UIImage(named:"picMeeting.png")!,UIImage(named:"picReading.png")!,UIImage(named:"picClimbing.png")!,UIImage(named:"picDating.png")!,UIImage(named:"picUpload.png")!]
+class DetailProjectController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UITextFieldDelegate {
+    var images:[UIImage] = [UIImage(named:"picMeeting.png")!,UIImage(named:"picReading.png")!,UIImage(named:"picClimbing.png")!,UIImage(named:"picDating.png")!,UIImage(named: "picDictionary.png")!,UIImage(named:"picUpload.png")!]
     @IBOutlet weak var detailImageCollection: UICollectionView!
     
     @IBOutlet weak var descrtipt: UITextView!
     
     var projectMO:MyProjectMO!
-    var projectColorR = 0
-    var projectColorG = 0
-    var projectColorB = 0
+    var projectColorR = 0.0
+    var projectColorG = 0.0
+    var projectColorB = 0.0
     var projectDate = Date()
     var projectName = ""
     var projectImage = UIImage(named: "picDictionary.png")
@@ -20,9 +20,31 @@ class DetailProjectController: UIViewController,UICollectionViewDelegate,UIColle
         
         // Do any additional setup after loading the view.
     }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        return true
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        for allCell in detailImageCollection.visibleCells{
+            allCell.layer.borderColor = UIColor.clear.cgColor
+        }
+        let cell = collectionView.cellForItem(at: indexPath)
+        cell?.layer.borderColor = UIColor.lightGray.cgColor
+        cell?.layer.borderWidth = 2.0
+        projectImage = images[indexPath.row]
+        if (indexPath.row == images.count - 1){
+            choosePhoto()
+        }
+    }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = detailImageCollection.dequeueReusableCell(withReuseIdentifier: "detailImageCell", for: indexPath) as! ImageCollectionViewCell
         cell.image.image = images[indexPath.row]
+        if (indexPath.row == images.count - 2){
+            cell.layer.borderColor = UIColor.lightGray.cgColor
+            cell.layer.borderWidth = 2.0
+        }
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -62,10 +84,10 @@ class DetailProjectController: UIViewController,UICollectionViewDelegate,UIColle
                 }
                 print("Saving data to context...")
                 appDelegate.saveContext()
-                self.navigationController?.popToRootViewController(animated: true)
+                let nv : UINavigationController = self.navigationController!
+                nv.popToRootViewController(animated: true)
             }
         }
-        
     }
     func choosePhoto(){
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
@@ -88,9 +110,10 @@ class DetailProjectController: UIViewController,UICollectionViewDelegate,UIColle
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage{
             images.insert(selectedImage, at: images.count-1)
+            projectImage = selectedImage
         }
         dismiss(animated: true, completion: nil)
         detailImageCollection.reloadData()
     }
-
+    
 }

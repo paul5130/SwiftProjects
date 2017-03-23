@@ -112,7 +112,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cgf-81-Ynf" id="WUA-Zg-Pqg">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="82"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="82.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="picDictionary" translatesAutoresizingMaskIntoConstraints="NO" id="L3Y-n4-dG1" customClass="ImageViewWithGradient" customModule="Succeed" customModuleProvider="target">
@@ -396,7 +396,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="82"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GYE-CQ-zAo" id="gHJ-jp-U3o">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="81"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="81.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LrG-Qx-Xgy">
@@ -554,6 +554,9 @@
                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonPressedWithSender:" destination="W9k-zR-RiY" eventType="touchUpInside" id="u79-rI-xHE"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeS-5M-Bg8" customClass="LittleCircle" customModule="Succeed" customModuleProvider="target">
                                                 <rect key="frame" x="34" y="0.0" width="30" height="30"/>
@@ -566,6 +569,9 @@
                                                         <color key="value" red="1" green="0.68269928680000003" blue="0.22915394850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonPressedWithSender:" destination="W9k-zR-RiY" eventType="touchUpInside" id="x2Y-Mf-ruP"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNV-AU-y8Y" customClass="LittleCircle" customModule="Succeed" customModuleProvider="target">
                                                 <rect key="frame" x="68" y="0.0" width="30" height="30"/>
@@ -578,6 +584,9 @@
                                                         <color key="value" red="1" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonPressedWithSender:" destination="W9k-zR-RiY" eventType="touchUpInside" id="64R-se-hE7"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pgw-x9-1OY" customClass="LittleCircle" customModule="Succeed" customModuleProvider="target">
                                                 <rect key="frame" x="102" y="0.0" width="30" height="30"/>
@@ -590,6 +599,9 @@
                                                         <color key="value" red="0.094555400311946869" green="0.73648697137832642" blue="0.081733249127864838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonPressedWithSender:" destination="W9k-zR-RiY" eventType="touchUpInside" id="fsy-sX-mRu"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdk-NC-j7a" customClass="LittleCircle" customModule="Succeed" customModuleProvider="target">
                                                 <rect key="frame" x="136" y="0.0" width="30" height="30"/>
@@ -602,6 +614,9 @@
                                                         <color key="value" red="0.16078431369999999" green="0.6705882353" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonPressedWithSender:" destination="W9k-zR-RiY" eventType="touchUpInside" id="QMj-zc-sKI"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="106" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCX-Zi-tIi" customClass="LittleCircle" customModule="Succeed" customModuleProvider="target">
                                                 <rect key="frame" x="170" y="0.0" width="30" height="30"/>
@@ -614,6 +629,9 @@
                                                         <color key="value" red="0.0" green="0.4431372549" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonPressedWithSender:" destination="W9k-zR-RiY" eventType="touchUpInside" id="ZTz-I3-aoQ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" tag="107" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEL-aT-iiz" customClass="LittleCircle" customModule="Succeed" customModuleProvider="target">
                                                 <rect key="frame" x="204" y="0.0" width="30" height="30"/>
@@ -626,6 +644,9 @@
                                                         <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonPressedWithSender:" destination="W9k-zR-RiY" eventType="touchUpInside" id="OXB-RZ-Awl"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -679,6 +700,7 @@
                     <navigationItem key="navigationItem" id="kAY-Bs-Owx"/>
                     <connections>
                         <outlet property="datePicker" destination="S9b-TC-pqA" id="T36-bl-yM5"/>
+                        <outlet property="defaultColor" destination="ZeS-5M-Bg8" id="0HI-TT-gsg"/>
                         <outlet property="projectName" destination="qCa-9P-7bT" id="MUO-2S-nOb"/>
                     </connections>
                 </viewController>

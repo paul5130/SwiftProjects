@@ -73,8 +73,9 @@ class TimelineController: TitleViewController,UITableViewDataSource,UITableViewD
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete{
             projects.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
         }
-        tableView.deleteRows(at: [indexPath], with: .fade)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -87,6 +88,14 @@ class TimelineController: TitleViewController,UITableViewDataSource,UITableViewD
     }
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
         switch type {
+        case .insert:
+            if let newIndexPath = newIndexPath{
+                timelineTableView.insertRows(at: [newIndexPath], with: .fade)
+            }
+        case .update:
+            if let indexPath = indexPath{
+                timelineTableView.reloadRows(at: [indexPath], with: .fade)
+            }
         case .delete:
             if let indexPath = indexPath{
                 timelineTableView.deleteRows(at: [indexPath], with: .fade)
